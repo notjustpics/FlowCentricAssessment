@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Order Management System</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Order Management System</h1>
+  <div id="authorization">
+    <label for="apiKey">API Key:</label>
+    <input type="text" id="apiKey" placeholder="Enter your API Key">
+    <button onclick="authorize()">Authorize</button>
+  </div>
+
+  <div id="signin" style="display: none;">
+    <label for="username">Username:</label>
+    <input type="text" id="username" placeholder="Enter your username">
+    <label for="password">Password:</label>
+    <input type="password" id="password" placeholder="Enter your password">
+    <button onclick="signin()">Sign In</button>
+  </div>
+
+  <div id="orderForm" style="display: none;">
+    <h2>Place Order</h2>
+    <div>
+      <label for="customerName">Customer Name:</label>
+      <input type="text" id="customerName" placeholder="Enter customer name">
+    </div>
+    <div>
+      <label for="orderDate">Order Date:</label>
+      <input type="date" id="orderDate">
+    </div>
+    <div id="products">
+      <!-- Product selection and quantity input fields (as before) -->
+    </div>
+    <button onclick="placeOrder()">Place Order</button>
+  </div>
+  
+  <script src="app.js"></script>
+</body>
+</html>
